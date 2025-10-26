@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lebogang Nong | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Montserrat', sans-serif; }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-gray-950 text-gray-100">
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-8 py-5 bg-gray-900 shadow-md sticky top-0 z-50">
+    <h1 class="text-2xl font-bold text-emerald-400">Lebogang Nong</h1>
+    <ul class="hidden md:flex space-x-8">
+      <li><a href="#home" class="hover:text-emerald-400">Home</a></li>
+      <li><a href="#about" class="hover:text-emerald-400">About</a></li>
+      <li><a href="#portfolio" class="hover:text-emerald-400">Portfolio</a></li>
+      <li><a href="#contact" class="hover:text-emerald-400">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+    <h2 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm <span class="text-emerald-400">Lebogang Nong</span></h2>
+    <p class="text-lg md:text-xl text-gray-400 mb-6">Entrepreneur | Web Developer | Vision Builder</p>
+    <a href="#portfolio" class="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3 rounded-full text-lg transition">View My Work</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 px-8 bg-gray-900">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-emerald-400 mb-4">About Me</h2>
+      <p class="text-gray-300 leading-relaxed mb-6">
+        I’m a passionate innovator and founder of Lebogang Solutions, driven by purpose and creativity. 
+        I enjoy building impactful digital solutions — from business websites to community platforms — 
+        that help people connect and grow.
+      </p>
+      <p class="text-gray-400">
+        Skills: HTML • CSS • JavaScript • Firebase • TailwindCSS • WordPress • UI Design
+      </p>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-20 px-8">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center text-emerald-400 mb-12">My Projects</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div class="bg-gray-900 p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+          <img src="assets/project1.png" alt="Project 1" class="rounded-xl mb-4">
+          <h3 class="text-xl font-semibold mb-2">Internet Café Management</h3>
+          <p class="text-gray-400 text-sm mb-3">A local business project with internet access, printing, and design services.</p>
+          <a href="#" class="text-emerald-400 hover:underline">View Project →</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-gray-900 p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+          <img src="assets/project2.png" alt="Project 2" class="rounded-xl mb-4">
+          <h3 class="text-xl font-semibold mb-2">NPO Donation Platform</h3>
+          <p class="text-gray-400 text-sm mb-3">A website concept for Dominion Life Cathedral with donation and event tracking.</p>
+          <a href="#" class="text-emerald-400 hover:underline">View Project →</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="bg-gray-900 p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+          <img src="assets/project3.png" alt="Project 3" class="rounded-xl mb-4">
+          <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
+          <p class="text-gray-400 text-sm mb-3">A personal portfolio site showcasing my work, skills, and vision.</p>
+          <a href="#" class="text-emerald-400 hover:underline">View Project →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-8 bg-gray-900">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-emerald-400 mb-8">Get In Touch</h2>
+      <p class="text-gray-300 mb-8">Interested in collaborating or hiring me? Let’s connect.</p>
+      <form id="contactForm" class="max-w-md mx-auto">
+        <input type="text" placeholder="Your Name" class="w-full mb-4 p-3 rounded-lg bg-gray-800 text-gray-100 border border-gray-700 focus:border-emerald-500">
+        <input type="email" placeholder="Your Email" class="w-full mb-4 p-3 rounded-lg bg-gray-800 text-gray-100 border border-gray-700 focus:border-emerald-500">
+        <textarea placeholder="Your Message" rows="5" class="w-full mb-4 p-3 rounded-lg bg-gray-800 text-gray-100 border border-gray-700 focus:border-emerald-500"></textarea>
+        <button type="submit" class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 rounded-lg transition">Send Message</button>
+      </form>
+      <div class="mt-8">
+        <p class="text-gray-400">Or connect via:</p>
+        <div class="flex justify-center space-x-6 mt-4">
+          <a href="#" class="hover:text-emerald-400">LinkedIn</a>
+          <a href="#" class="hover:text-emerald-400">WhatsApp</a>
+          <a href="mailto:youremail@example.com" class="hover:text-emerald-400">Email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-950 text-center py-6 text-gray-500 text-sm">
+    © 2025 Lebogang Nong. All rights reserved.
+  </footer>
+
+  <!-- JS -->
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', e => {
+      e.preventDefault();
+      alert('Message sent successfully!');
+    });
+  </script>
+</body>
+</html>
